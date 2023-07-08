@@ -1,0 +1,11 @@
+const Cart = (props) => {
+  const { quantity = 0, handleBAsketShow = Function.prototype } = props;
+  return (
+    <div className="cart blue darken-4 white-text" onClick={handleBAsketShow}>
+      <i className="material-icons">add_shopping_cart</i>
+      {quantity ? <span className="cart-quantity">{quantity}</span> : null}
+    </div>
+  );
+};
+
+export default Cart;
